@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="ourStory">
+        <img class="logo" src="" alt="">
+        <div class="storyText">
+            <p class="tittle">The secret to providing young people with opportunity is to understand what they will need most for the future</p>
+            <input type="button" class="bttn" value="See our story">
+            <img alt="" class="headerImg" src="img/qqq.png">
+        </div>
+    </header>
+    <!--   -->
+    <section class="section">
+        <div class="boxCont">
+            <div class="box1">
+                <img alt='' src="img/img1.png" class="img1">
+                <div class="textBox">
+                    <img class="icon1" alt="" src="img/light-bulb.png">
+                    <p class="text">Meg co-founders <span>Tom Shugg</span> and <span>Sam Dean</span> started sharing ideas in primary school, aged 11</p>
+                </div>
+            </div>
+            <img class="bubble" alt="" src="img/Branding_shapes-09.png">
+        </div>
+        <div class="box2">
+            <div class="textBox">
+                <p class="text">15 years later we started<br><span>My Chinese Tutor</span> from the spare room in Tom’s Beijing apartment. With one team member, we hustled to find customers and work out how a business can grow.</p>
+            </div>
+            <img alt='' src="img/img2.png" class="img2">
+        </div>
+        <div class="box3">
+            <img alt='' src="img/img3.png" class="img3">
+            <div class="textBox">
+                <p class="text">Online teaching was working with private students but schools presented a great opportunity for our idea to develop. Finding access to high quality language teachers is a problem faced by many schools and little <span>Yea Primary School</span> in Victoria, Australia was the very first school to say ‘yes’ to us.</p>
+                <img class="icon2" alt="" src="img/laptop.png">
+            </div>
+        </div>
+        <div class="box4">
+            <img alt='' src="img/img4.png" class="img4">
+            <div class="textBox">
+                <p class="text">With a growing teaching team we also needed to up our game with program management, curriculum development, sales and marketing. This meant more people and more good times.</p>
+            </div>
+        </div>
+        <div class="box5">
+            <img alt='' src="img/img5.png" class="img5">
+            <div class="textBox">
+                <p class="text">Then word of our program spread to the UK and <span>we opened an office in London</span> to be able to sink our teeth into the opportunity</p>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="textBox">
+                <img class="icon3" alt="" src="img/airplane.png">
+                <p class="text">We broadened our offering to include <span>immersion school camps</span> and <span>international tours</span> for teachers and students.</p>
+            </div>
+            <img alt='' src="img/img6.png" class="img6">
+        </div>
+        <div class="box7">
+            <div class="textBox">
+                <p class="text">The <span>US was calling</span> and we were delighted to discover that finding high quality foreign language teachers is just as hard in the Bronx as it was elsewhere in the world.</p>
+            </div>
+            <img alt='' src="img/img7.png" class="img7">
+        </div>
+        <div class="box8">
+            <img alt='' src="img/img8.png" class="img8">
+            <div class="textBox">
+                <img class="icon4" alt="" src="img/map.png">
+                <p class="text">To make the most of the opportunities presented to us in the US <span>we set up shop in Nashville, TN</span> and recruited a team of superstars to push Meg to the next level.</p>
+            </div>
+        </div>
+        <div class="box9">
+            <div class="textBox">
+                <p class="text">We now had the capability to teach languages in any country across any timezone in the world, so we decided it was time to take on a new challenge and develop a <span>Spanish language program.</span></p>
+            </div>
+            <img alt='' src="img/img9.png" class="img9">
+        </div>
+        <div class="box10">
+            <div class="textBox">
+                <p class="text">With our global<br> footprint firmly in place,<br> and excited about the<br> chance to share<br>
+                    our offerings with lots<br> of new people, we<br>have re-branded<br> the company.<br><span>We are Meg -</span><br>ready to connect<br> your classrooms to<br> the rest of the world!</p>
+            </div>
+
+            <div id="video_holder">
+                <div id="overlay"></div>
+                <video loop controls class="videoBox" id="myVideo">
+                    <source src="WeAreMeg-FINALVIDEO.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <img class="bubble2" src="img/Branding_organic_-04-copy-2.png" alt="">
+        </div>
+
+    </section>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <script>
+        var overlay = document.getElementById('overlay');
+        var vid = document.getElementById('myVideo');
+
+        if (overlay.addEventListener) {
+            overlay.addEventListener("click", play, false)
+        } else if (overlay.attachEvent) {
+            overlay.attachEvent("onclick", play)
+        }
+
+        function play() {
+            if (vid.paused) {
+                vid.play();
+                overlay.className = "o";
+            } else {
+                vid.pause();
+                overlay.className = "";
+            }
+        }
+    </script>
+
+</body></html>
